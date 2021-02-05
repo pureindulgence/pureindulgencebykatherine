@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css" rel="stylesheet"> -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b2e5f27fec.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lobster&display=swap" rel="stylesheet"> 
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Gifting</title>
+</head>
+<body>
+  <div id="page-container">
+   
+ 
+    <div id="app">
+      
+      <header-component></header-component>
+  
+      <main>
+        <div class="min-h-screen flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+          <div class="sm:mx-auto sm:w-full sm:max-w-md">
+            <img class="mx-auto  w-auto" src="../misc/Pure Indulgence by Katherine Logo.png" alt="Pure Indulgence">
+           
+            
+          </div>
+          <h1 class="mt-6 text-center text-pink-700 text-3xl font-extrabold text-gray-900">
+            Something for every occasion!
+          </h1>
+          <p class="text-3xl ml-40 mr-40">We love being a part of your special occasions! Our delicious treats have been a preferred choice for all occasions - weddings, birth announcements, corporate gifting or birthdays. Call us on +16476756746 or leave us a message below and we will get in touch with you.</p>
+        <form class="space-y-8 divide-y divide-gray-200 ml-16 mr-16 p-24 shadow-xl" id="form-id" action="mailto:pureindulgencekatherine@gmail.com" method="POST" >
+          <div class="space-y-8 divide-y divide-gray-200 sm:space-y-5">
+            <div>
+              
+        
+              <div class="mt-6 sm:mt-5 space-y-6 sm:space-y-5">
+                <div class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
+                  <label for="username" class="block text-lg font-medium text-gray-700 sm:mt-px sm:pt-2">
+                    Name
+                  </label>
+                  <div class="mt-1 sm:mt-0 sm:col-span-2">
+                    <div class="max-w-lg flex rounded-md shadow-sm">
+                      
+                      <input type="text" name="name" id="name" autocomplete="username" class="flex-1 block w-full focus:ring-indigo-500 focus:border-indigo-500 min-w-0 rounded-none rounded-r-md text-lg shadow-lg border-gray-300">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
+                  <label for="username" class="block text-lg font-medium text-gray-700 sm:mt-px sm:pt-2">
+                    Email
+                  </label>
+                  <div class="mt-1 sm:mt-0 sm:col-span-2">
+                    <div class="max-w-lg flex rounded-md shadow-sm">
+                      
+                      <input type="text" name="email" id="email" autocomplete="username" class="flex-1 block w-full focus:ring-indigo-500 focus:border-indigo-500 min-w-0 rounded-none rounded-r-md shadow-lg text-lg border-gray-300">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
+                  <label for="username" class="block text-lg font-medium text-gray-700 sm:mt-px sm:pt-2">
+                    Phone
+                  </label>
+                  <div class="mt-1 sm:mt-0 sm:col-span-2">
+                    <div class="max-w-lg flex rounded-md shadow-sm">
+                      
+                      <input type="text" name="phone" id="phone" autocomplete="username" class="flex-1 block w-full focus:ring-indigo-500 focus:border-indigo-500 min-w-0 rounded-none rounded-r-md shadow-lg text-lg border-gray-300">
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
+                  <label for="about" class="block text-lg font-medium text-gray-700 sm:mt-px sm:pt-2">
+                    Description
+                  </label>
+                  <div class="mt-1 sm:mt-0 sm:col-span-2">
+                    <textarea id="description" name="description" rows="3" class="max-w-lg shadow-sm block w-full focus:ring-indigo-500 focus:border-indigo-500 text-lg border-gray-900 shadow-lg rounded-md"></textarea>
+                    <p class="mt-2 text-sm text-gray-500">Write a few sentences about item.</p>
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 gap-6 sm:grid-cols-3 lg:grid-cols-3">
+                  <br />
+                  <button id="submit-id" type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-pink-700 bg_footer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    Send
+                  </button>
+                </div>
+           
+                
+              </div>
+            </div>
+        
+           
+        
+            
+          </div>
+        
+        
+        </form>
+      </main>
+      <footer-component ></footer-component>
+      
+   </div>
+  
+  </div>
+     
+ <script type="text/javascript" src="js/index.js"></script>
+ <script type="text/javascript" src="js/active_tab.js"></script>
+
+
+
+
+</body>
+</html>

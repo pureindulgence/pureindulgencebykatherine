@@ -1,0 +1,362 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+nav {
+   
+    /* background-color: #c9b692;  */
+    
+   
+    background-color: #E2C996; 
+}
+
+
+.chef-logo {
+  margin-left: 40%;
+}
+
+.menu_options {
+  margin-left: 200px;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px #ECECEC;
+	border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #E2C996;
+	border-radius: 10px;
+}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+		background: #b89b61;
+	}
+
+.maps {
+  height: 80vh;;
+}
+footer {
+    background-color: #F6ACC3;
+    
+    bottom: 0;
+    width: 100%;
+    
+}
+
+h2 {
+  text-shadow: 1px 1px gray;
+}
+
+.text_color {
+  color: #F6ACC3;
+}
+
+
+.bg_footer {
+  background-color: #F6ACC3;
+}
+
+.responsive {
+    width: 100%;
+    height: auto%;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+
+  .logo_container {
+    font-family: 'Lobster', cursive;
+  }
+  
+h1 {
+  font-family: 'Lobster', cursive;
+}
+
+  main {
+    padding-bottom: 2.5rem;
+  }
+
+  p {
+    font-family: 'Dancing Script', cursive;
+    
+  }
+
+  #logo_gif {
+      height: 30%;
+      width:30%;
+      
+      
+  }
+  #logo_gif_container {
+   align-items: center;
+   height: auto;
+    
+    
+}
+
+  .particle {
+    background-color: GhostWhite;
+    border-radius: 50%;
+    box-shadow: 0 0 var(--blur) var(--spread) rgba(255, 255, 224, 0.5); /* GhostWhite with 50% opacity */
+    height: var(--size);
+    left: var(--left);
+    position: absolute;
+    top: var(--top);
+    width: var(--size);
+    z-index: 99;
+  }
+
+
+
+
+  /* carousel for specials*/
+
+
+  /* .mySlides {display: none} */
+/* img {vertical-align: middle;} */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: auto;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+ 
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #F6ACC3;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: white;
+  position: absolute;
+  top: 40%;
+  font-weight: 1000;
+  max-width: 50%;
+  margin-left: 5rem;
+  /* font-size: 15px;
+  padding: 8px 12px;
+  
+  
+  width: 100%;
+  text-align: center; */
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: rgb(172, 97, 97);
+  font-weight: 1000;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+
+.testomonial {
+  /* background: linear-gradient(rgba(#F6ACC3, .75), rgba(#F6ACC3, .85)), url("https://farm3.staticflickr.com/2862/10936924134_24ce77ae37_b.jpg") */
+  background-color: rgba(246, 172, 195, 0.397);
+  /* background-image: url("misc/bg_1.JPG"); */
+  width: auto;
+  height: 700px;
+   /* background-color: rgba(246, 172, 195, 0.397); */
+   /* opacity: 0.1;  */
+   background-position: 50% 0;
+   background-size: cover;
+}
+
+
+.layer_1 {
+  /* background-color: linear-gradient(rgba(#F6ACC3, .75), rgba(#F6ACC3, .85));
+   */
+   background-image: url("misc/bg_1.JPG");
+height: inherit;
+width: inherit;
+background-repeat: no-repeat;
+   opacity: 0.25; 
+}
+
+.layer_2 {
+  /* background-color: linear-gradient(rgba(#F6ACC3, .75), rgba(#F6ACC3, .85));
+   */
+   background-image: url("misc/bg_2.jpg");
+height: inherit;
+width: inherit;
+background-repeat: no-repeat;
+   opacity: 0.25; 
+}
+.layer_3 {
+  /* background-color: linear-gradient(rgba(#F6ACC3, .75), rgba(#F6ACC3, .85));
+   */
+   background-image: url("misc/bg_3.jpg");
+height: inherit;
+width: inherit;
+background-repeat: no-repeat;
+   opacity: 0.25; 
+}
+
+
+h2 {
+  letter-spacing: 3px;
+}
+
+
+
+.bg-custom1 {
+  background-color: rgba(246, 172, 195, 0.267);
+}
+
+
+#burger-menu:hover {
+  background-color: #b89b61;
+}
+
+
+/* for the flyout menu */
+
+.mega-menu {
+  display: none;
+  left: 0;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+
+
+
+/* #hoverable Class Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hoverable {
+  position: static;
+}
+
+.hoverable > a:after {
+  content: "\25BC";
+  font-size: 10px;
+  padding-left: 6px;
+  position: relative;
+  top: -1px;
+}
+
+.hoverable:hover .mega-menu {
+  display: block;
+}
+
+
+/* #toggle Class Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.toggleable > label:after {
+  content: "\25BC";
+  font-size: 10px;
+  padding-left: 6px;
+  position: relative;
+  top: -1px;
+}
+
+.toggle-input {
+  display: none;
+}
+.toggle-input:not(checked) ~ .mega-menu {
+  display: none;
+}
+
+.toggle-input:checked ~ .mega-menu {
+  display: block;
+}
+
+.toggle-input:checked + label {
+  color: white;
+  background: #2c5282; /*@apply bg-blue-800 */
+}
+
+.toggle-input:checked ~ label:after {
+  content: "\25B2";
+  font-size: 10px;
+  padding-left: 6px;
+  position: relative;
+  top: -1px;
+}
+
+
+.flyout-menu {
+  background-color: #E2C996;
+}
+
+.off{
+  display: none;
+}

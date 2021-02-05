@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css" rel="stylesheet"> -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <script src="https://kit.fontawesome.com/b2e5f27fec.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lobster&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .responsive {
+      width: 100%;
+      height: auto;
+    }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>About us</title>
+</head>
+<body>
+  <div id="page-container">
+   
+ 
+    <div id="app">
+      
+      <header-component></header-component>
+  
+      <main>
+        <h1 class="mt-6 text-center text-pink-700 text-3xl font-extrabold text-gray-900">
+         About Katherine
+        </h1>
+        <div class="ml-40 mr-60 text-3xl">
+
+          <div class=" w-full">
+          <img src="../misc/chef.jpeg" class="relative  w-1/5 h-1/5 p-5 bg-custom1 float-right  shadow-lg rounded-md" alt="" ></div>
+          <p class="mt-4">Known for having unending love for all things sweet, Katherine Varghese is a baker, cook and cake decorator based in Toronto, Canada. She has a deep rooted attachment and affection for creating baked treats which dates back to her childhood. What started off as a little girl helping her maternal grandma and mum in the kitchen, culminated in the beginning of ‘Pure Indulgence’ in 2014. </p>
+          <p class="mt-4">
+            An alumnus of King’s College London, Katherine read psychology in university though her heart was always set on baking and cake decorating. After graduating from both culinary and baking school (George Brown College, Toronto and the Institute of Baking and Cake Art, Bangalore) and equipped with knowledge and techniques from her years of previous work experiences, Katherine is keen to bring you joy through her sweet creations. </p>
+            <p class="mt-4">
+            Having been trained in French classical cooking, Katherine’s style of baking is a refreshing mix that pays homage to her Indian roots. She is eager to introduce you to a world of moist, Indian style cream cakes that she grew up eating and is certain, will bring you happiness!</p>
+        </div>
+
+        <h1 class="mt-6 text-center text-pink-700 text-3xl font-extrabold text-gray-900">
+          About Pure indulgence 
+         </h1>
+         <div class="ml-40 mr-60 text-3xl">
+           <p class="mt-4">
+            A labour of love for our cake decorator-owner Katherine, ‘Pure Indulgence’ opened in Toronto, Canada, in December 2020.</p>
+            <p class="mt-4">
+            Having grown up in house full of professionals, where baking and cake decorating was considered a hobby~skill, Katherine was enthusiastic about starting her venture from a very young age; and so she did at the age of 22...Pure Indulgence took its birth in 2014, in Bangalore, India. The bakery saw two successful years of business in India and then our owner decided to expand her skill set which brought her to Toronto, Canada in 2016. </p>
+            <p class="mt-4">
+            A course in the Chef’s School at George Brown College and three years of working in the restaurant industry in Toronto, ‘Pure Indulgence’ reopened its doors in 2020, only this time in a new part of the world!  </p>
+            <p class="mt-4">
+            With a keen eye for detail and a passion for creating the moistest cakes you’ve ever eaten, Katherine and ‘Pure Indulgence’ offer Toronto a variety of Indian style classic fresh cream cakes including ‘Pineapple pastries’, ‘Butterscotch’ and ‘Blackforest’ as well as exotic tropical flavours such as ‘Mango-Lychee’ and ‘Apricot-Orange’ gateau. In addition to the variety of Indian style fresh cream cakes, Pure Indulgence also offers more classic cakes ( and pound cakes) cupcakes, macarons, chocolates and more. Using only the best ingredients and made with love, our bespoke baked goodies are a source of joy to many and we cannot wait to be part of your next celebration.</p>
+         </div>
+        
+
+
+        <div id="testimonials" class="slideshow-container">
+
+         
+         
+         
+          
+         
+          
+          </div>
+          <br>
+          
+          <div id="testimonials_dots" style="text-align:center">
+            
+            
+          </div>
+      </main>
+      <footer-component ></footer-component>
+      
+   </div>
+  
+  </div>
+     
+ <script type="text/javascript" src="js/index.js"></script>
+ <script type="text/javascript" src="js/active_tab.js"></script>
+ <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="text/javascript">
+ axios.get('/About_us')
+        .then((response) => {
+           testimonials = response.data;
+            const len_testimonials = testimonials.length;
+           
+           testimonials.forEach(element => {
+            const rand_int = Math.floor(Math.random() * 3)+1;
+            const index_testimonial = testimonials.indexOf(element)+1;
+              const markup = `<div  class="mySlides testomonial fade ml-40 mr-40 mt-40" >
+            <div class="layer_${rand_int} ">
+            <div class="numbertext text-xl"> ${index_testimonial}/ ${len_testimonials}</div>
+            
+           
+          </div>
+          <div class="text text-xl ">"${element.testimonialDescription}."<br><br><span class="text-3xl ">    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  -${element.authorName}</span></div>
+          
+          </div>`;
+
+          const dot_markup = `<span class="dot"></span> `;
+              
+          document.getElementById('testimonials').insertAdjacentHTML('beforeend',markup);
+          document.getElementById('testimonials_dots').insertAdjacentHTML('beforeend',dot_markup);
+
+           })
+            
+           var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 10000); // Change image every 2 seconds
+}
+           
+        })
+        .catch((error) => {
+            console.log(error);
+        })
+
+
+</script>
+
+
+
+</body>
+</html>
