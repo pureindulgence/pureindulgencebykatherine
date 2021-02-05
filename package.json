@@ -6,8 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "postcss style.css -o frontEnd/style.css",
-    "heroku-postbuild": "cd frontEnd && npm install && npm run build"
+    "build": "postcss style.css -o frontEnd/style.css"
   },
   "keywords": [],
   "author": "",
