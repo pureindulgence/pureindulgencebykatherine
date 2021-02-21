@@ -4,7 +4,7 @@ Vue.component('header-component', {
       <div class="relative flex justify-between menu_options h-16">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           
-          <button id="burger-menu"  class="inline-flex  float-right p-2 rounded-md focus:outline-none " aria-expanded="false">
+          <button id="burger-menu"  class="inline-flex   p-2 rounded-md focus:outline-none " aria-expanded="false">
             <span class="sr-only">Open main menu</span>
         
             <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -120,18 +120,18 @@ Vue.component('footer-component', {
           >
             Connect With Us
           </a>
-          <article class="h-0 md:h-auto -mt-4 md:mt-0 overflow-hidden">
+          <article class="h-0 md:h-auto -mt-4 md:mt-0 ">
             <ul class="my-5 text-sm tracking-wide">
-              <li class="my-3 tracking-wide">
+              <li class="my-3 tracking-wide transform hover:scale-110">
                 <a href="https://www.facebook.com/PureIndulgencebyKatherine/" class=" hover:text-pink-900 "><i class="fab fa-facebook-f pr-1"></i> Facebook</a>
               </li>
-              <li class="my-3 tracking-wide">
+              <li class="my-3 tracking-wide transform hover:scale-110">
                 <a href="https://instagram.com/pureindulgencebykatherine?igshid=1ppqx2zsvvngb" class=" hover:text-pink-900 "><i class="fab fa-instagram pr-1"></i>Instagram</a>
               </li>
-              <li class="my-3 tracking-wide">
+              <li class="my-3 tracking-wide transform hover:scale-110">
                 <a href="tel:+16476756746" class=" hover:text-pink-900 "><i class="fas fa-phone-alt pr-1  "></i>+1-(647)-675-6746</a>
               </li>
-              <li class="my-3 tracking-wide">
+              <li class="my-3 tracking-wide transform hover:scale-110">
               <a href="https://api.whatsapp.com/send?phone=+16476756746" class=" hover:text-pink-700 "><i class="fab fa-whatsapp pr-1"></i>Whatsapp</a>
             </li>
               
