@@ -2,7 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face{
+  font-family: Montserrat-Regular;
+  font-weight: 400;
+  src:url(misc/Montserrat-Regular.ttf);
+}
 
+body {
+  font-family: Montserrat-Regular;;
+}
 nav {
    
     /* background-color: #c9b692;  */
@@ -88,7 +96,7 @@ h1 {
   }
 
   p {
-    font-family: 'Dancing Script', cursive;
+    
     
   }
 

@@ -97,44 +97,11 @@ Vue.component('header-component', {
 // <img src="../Pure-Indulgence-by-Katherine-Logo.png" id="logo" class="pr-96 pl-10 " alt="Girl in a jacket" >
 //Register Page header component
 Vue.component('footer-component', {
-  template: `<footer class="mt-16 ">
+  template: `<footer class="mt-16 hidden md:block lg:block xl:block">
     <div class="border-t md:px-4 md:pt-10 md:pb-5">
       <div class="flex flex-wrap md:max-w-screen-lg mx-auto">
-        <section
-          class="relative text-gray-700 font-light font-light border-b px-4 pb-4 md:py-3 w-full md:border-none md:w-1/4"
-        >
-          <div class="md:hidden">
-            <button
-              onclick="toggleFooterSection(event)"
-              class="uppercase text-xs font-bold tracking-wider text-pink-700 focus:outline-none border-t border-white py-4 w-full text-left"
-              type="button"
-            >
-              
-            </button>
-          </div>
-          <a
-            class="uppercase text-xs font-bold tracking-wider text-pink-700 hidden md:block"
-            href="#"
-          >
-            Categories
-          </a>
-          <article class="h-0 md:h-auto -mt-4 md:mt-0 overflow-hidden">
-            <ul class="my-5 text-sm tracking-wide">
-              <li class="my-3 tracking-wide">
-                <a href="#">Fusce vel sem</a>
-              </li>
-              <li class="my-3 tracking-wide">
-                <a href="#">Ut venenatis tellus</a>
-              </li>
-              <li class="my-3 tracking-wide">
-                <a href="#">Vestibulum</a>
-              </li>
-              <li class="my-3 tracking-wide">
-                <a href="#">Nunc at ipsum</a>
-              </li>
-            </ul>
-          </article>
-        </section>
+        
+          
         <section
           class="relative text-gray-700 font-light font-light border-b px-4 pb-4 md:py-3 w-full md:border-none md:w-1/4"
         >
@@ -175,7 +142,7 @@ Vue.component('footer-component', {
         <section
           class="relative text-gray-700 font-light font-light border-b px-4 pb-4 md:py-3 w-full md:border-none md:w-1/4"
         >
-          <div class="md:hidden">
+          <div class="hidden ">
             <button
               onclick="toggleFooterSection(event)"
               class="uppercase text-xs font-bold tracking-wider text-pink-700 focus:outline-none border-t border-white py-4 w-full text-left"
@@ -185,13 +152,13 @@ Vue.component('footer-component', {
             </button>
           </div>
           <a
-            class="uppercase text-xs font-bold tracking-wider text-pink-700 hidden md:block"
+            class="uppercase text-xs font-bold tracking-wider text-pink-700 hidden "
             href="#"
           >
             Quisque
           </a>
           <article class="h-0 md:h-auto -mt-4 md:mt-0 overflow-hidden">
-            <ul class="my-5 text-sm tracking-wide">
+            <ul class="my-5 text-sm tracking-wide hidden">
               <li class="my-3 tracking-wide">
                 <a href="#">Finibus nulla eget</a>
               </li>
