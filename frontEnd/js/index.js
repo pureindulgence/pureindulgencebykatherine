@@ -186,7 +186,7 @@ Vue.component('footer-component', {
     </div>
     <div class="flex md:hidden lg:hidden xl:hidden p-4">
     <div class="flex flex-wrap md:max-w-screen-lg mx-auto">
-      <img src="../misc/Pure Indulgence by Katherine Logo.png" alt="Girl in a jacket" class="w-32 md:w-32 lg:w-48">
+      <img src="../misc/Pure Indulgence by Katherine Logo.png" alt="Girl in a jacket" class="w-32 hidden md:w-32 lg:w-48">
       </div>   
       <a
       class="uppercase text-xs font-bold tracking-wider text-pink-700 hidden md:block"
