@@ -10,7 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<link rel="shortcut icon" href="../misc/pi_logo.png" type="image/x-icon" />
     <title>Contact Us</title>
 </head>
 <body>
@@ -27,10 +33,10 @@
           <div class="px-4 py-5 sm:p-6 content-center" >
             <!-- Content goes here -->
             <section class="maps shadow content-center" >
-              <h2 class="mt-6 text-center text-pink-700 text-3xl font-extrabold text-gray-900">
+              <h2 class="mt-6 text-center text-pink-700 text-3xl font-extrabold text-gray-900 anime_title2" style="opacity:0">
                 Meet us here!!
               </h2>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.1088332637423!2d-79.39415804848463!3d43.70828727901686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b332567514581%3A0x87ac9268571ad2e9!2s212%20Eglinton%20Ave%20E%2C%20Toronto%2C%20ON%20M4P%201K2%2C%20Canada!5e0!3m2!1sen!2sus!4v1609534936069!5m2!1sen!2sus" w class="content-center m-auto maps w-full p-16" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              <iframe   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.1088332637423!2d-79.39415804848463!3d43.70828727901686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b332567514581%3A0x87ac9268571ad2e9!2s212%20Eglinton%20Ave%20E%2C%20Toronto%2C%20ON%20M4P%201K2%2C%20Canada!5e0!3m2!1sen!2sus!4v1609534936069!5m2!1sen!2sus"  class="content-center m-auto maps w-full p-16" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
               <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.0185168072976!2d-79.38474384873089!3d43.7101642566605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b332c8c3ed44f%3A0xd59625bad43b749d!2s502%20Eglinton%20Ave%20E%2C%20Toronto%2C%20ON%20M4P%201N3%2C%20Canada!5e0!3m2!1sen!2sus!4v1609098927192!5m2!1sen!2sus" class="content-center m-auto maps w-full p-16" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
               <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/jCuuQET5DIc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
           
@@ -87,10 +93,10 @@
                 
               </li>
             </ul>
-            <h2 class="mt-6 text-center text-pink-700 text-3xl font-extrabold text-gray-900">
+            <h2 class="mt-6 text-center text-pink-700 text-3xl font-extrabold text-gray-900 anime_title" style="opacity:0">
               Connect with us!!
             </h2>
-            <form class="space-y-8 divide-y divide-gray-200 ml-16 mr-16 p-24 shadow-xl" id="form-id" action="https://api.whatsapp.com/send?phone=+17757378589" method="POST" >
+            <form class="space-y-8 divide-y divide-gray-200 mx-auto lg:ml-16 lg:mr-16 lg:p-24 shadow-xl" id="form-id" action="https://api.whatsapp.com/send?phone=+17757378589" method="POST" >
               <div class="space-y-8 divide-y divide-gray-200 sm:space-y-5">
                 <div>
                   
@@ -103,37 +109,37 @@
                       <div class="mt-1 sm:mt-0 sm:col-span-2">
                         <div class="max-w-lg flex rounded-md shadow-sm">
                           
-                          <input type="text" name="name" id="name" autocomplete="username" class="flex-1 block w-full focus:ring-indigo-500 focus:border-indigo-500 min-w-0 rounded-none rounded-r-md text-lg shadow-lg border-gray-300">
+                          <input type="text" name="name" id="name" autocomplete="username" class="flex-1 block w-full focus:ring-indigo-500 focus:border-indigo-500 min-w-0  rounded-md text-lg shadow-lg border-gray-300">
                         </div>
                       </div>
                     </div>
     
                     <div class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
-                      <label for="username" class="block text-lg font-medium text-gray-700 sm:mt-px sm:pt-2">
+                      <label for="username" class="block text-lg font-medium text-gray-700 p-2 sm:mt-px sm:pt-2">
                         Email
                       </label>
                       <div class="mt-1 sm:mt-0 sm:col-span-2">
                         <div class="max-w-lg flex rounded-md shadow-sm">
                           
-                          <input type="text" name="email" id="email" autocomplete="username" class="flex-1 block w-full focus:ring-indigo-500 focus:border-indigo-500 min-w-0 rounded-none rounded-r-md shadow-lg text-lg border-gray-300">
+                          <input type="text" name="email" id="email" autocomplete="username" class="flex-1 block w-full focus:ring-indigo-500 focus:border-indigo-500 min-w-0  rounded-md shadow-lg text-lg border-gray-300">
                         </div>
                       </div>
                     </div>
     
                     <div class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
-                      <label for="username" class="block text-lg font-medium text-gray-700 sm:mt-px sm:pt-2">
+                      <label for="username" class="block text-lg font-medium text-gray-700 p-2 sm:mt-px sm:pt-2">
                         Phone
                       </label>
                       <div class="mt-1 sm:mt-0 sm:col-span-2">
                         <div class="max-w-lg flex rounded-md shadow-sm">
                           
-                          <input type="text" name="phone" id="phone" autocomplete="username" class="flex-1 block w-full focus:ring-indigo-500 focus:border-indigo-500 min-w-0 rounded-none rounded-r-md shadow-lg text-lg border-gray-300">
+                          <input type="text" name="phone" id="phone" autocomplete="username" class="flex-1 block w-full focus:ring-indigo-500 focus:border-indigo-500 min-w-0  rounded-md shadow-lg text-lg border-black-700">
                         </div>
                       </div>
                     </div>
             
                     <div class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
-                      <label for="about" class="block text-lg font-medium text-gray-700 sm:mt-px sm:pt-2">
+                      <label for="about" class="block text-lg font-medium text-gray-700 p-2 sm:mt-px sm:pt-2">
                         Description
                       </label>
                       <div class="mt-1 sm:mt-0 sm:col-span-2">

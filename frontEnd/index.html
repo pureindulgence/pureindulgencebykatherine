@@ -10,8 +10,14 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="https://kit.fontawesome.com/b2e5f27fec.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lobster&display=swap" rel="stylesheet"> 
+<link rel="shortcut icon" href="../misc/pi_logo.png" type="image/x-icon" />
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
     <title>Home</title>
 </head>
 <body>
@@ -22,13 +28,13 @@
     
     <header-component></header-component>
 
-    <main>
+    <main class="sm:px-1">
       <div id="logo_gif_container" >
 
       <img src="../misc/Pure Indulgence by Katherine Logo.png" id="logo_gif" onmouseover="gif_function()" onmouseout="png_function()" class="ml-auto mr-auto mt-10" alt="">
     </div>
 
-    <h2  class="mt-6 text-center text-pink-700 text-3xl font-extrabold text-gray-900">
+    <h2  class="mt-6 text-center text-pink-700 text-3xl font-extrabold text-gray-900 anime_title2" style="opacity:0;">
       VALENTINE'S SPECIALS
     </h2>
  
@@ -40,10 +46,10 @@
         
       </div>
     
-      <h2  class="mt-6 text-center text-pink-700 text-3xl font-extrabold text-gray-900">
+      <h2  class="mt-6 text-center text-pink-700 text-3xl font-extrabold text-gray-900 anime_title" style="opacity:0;">
         BEST SELLERS
 
-        <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 m-20" id = "best_sellers">
+        <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 m-20 " id = "best_sellers">
        
         
       
@@ -51,7 +57,7 @@
         </ul>
       </h2>
 
-      <h2  class="mt-6 text-center text-pink-700 text-3xl font-extrabold text-gray-900">
+      <h2  class="mt-6 text-center text-pink-700 text-3xl font-extrabold text-gray-900 anime_title" style="opacity:0;">
         FEATURED COLLECTION
 
         <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 m-20" id="featured_collection">
@@ -67,8 +73,8 @@
           <img src="../misc/Pure Indulgence by Katherine Logo.png" alt="Girl in a jacket" class="w-32 md:w-32 lg:w-64">
         </div>
         <div>
-          <h2>Why Pure Indulgence?</h2>
-          <p>A labour of love for our cake decorator-owner Katherine, ‘Pure Indulgence’ opened in Toronto, Canada in December 2020. Katherine is originally from Bangalore, India and this is where Pure Indulgence took its birth, in the year 2014.  With a keen eye for detail and a passion for creating the moistest cakes you’ve ever eaten, Pure Indulgence offers a variety of sweet treats including (but not limited to) Indian style fresh cream cakes, classic cakes, cupcakes, macarons, chocolates and more. Using only the best ingredients and made with love, our bespoke baked goodies are a source of joy to many and we cannot wait to be part of your next celebration. </p>
+          <h2 class="anime_title" style="opacity:0;">Why Pure Indulgence?</h2>
+          <p class="anime_text" style="opacity:0;">A labour of love for our cake decorator-owner Katherine, ‘Pure Indulgence’ opened in Toronto, Canada in December 2020. Katherine is originally from Bangalore, India and this is where Pure Indulgence took its birth, in the year 2014.  With a keen eye for detail and a passion for creating the moistest cakes you’ve ever eaten, Pure Indulgence offers a variety of sweet treats including (but not limited to) Indian style fresh cream cakes, classic cakes, cupcakes, macarons, chocolates and more. Using only the best ingredients and made with love, our bespoke baked goodies are a source of joy to many and we cannot wait to be part of your next celebration. </p>
         </div>
 
       </div>
@@ -88,6 +94,7 @@
  <script type="text/javascript" src="js/index.js"></script>
  <script type="text/javascript" src="js/active_tab.js"></script>
  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
  <script type="text/javascript"  >
 
 
@@ -100,7 +107,7 @@
             items = response.data;
           
             items.forEach(element => {
-              const markup = ` <li class="col-span-1 flex flex-col text-center bg-white rounded-lg shadow-xl divide-y divide-gray-200 m-10" >
+              const markup = ` <li style="opacity:0;" class="col-span-1 anime_card flex flex-col text-center bg-white rounded-lg shadow-xl divide-y divide-gray-200 m-10" >
           <div class="flex-1 flex  flex-col p-8">
             <img class="w-64 h-64 flex-shrink-0 mx-auto bg-black rounded-lg" src=${element.photo} alt="">
             <h3 class="mt-6 text-gray-900 text-sm font-medium">${element.name}</h3>

@@ -1,10 +1,10 @@
 Vue.component('header-component', {
   template: `<nav class=" shadow">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 m-2">
-      <div class="relative flex justify-between menu_options h-16">
+      <div class="relative flex justify-end lg:menu_options h-16">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           
-          <button id="burger-menu"  class="inline-flex   p-2 rounded-md focus:outline-none " aria-expanded="false">
+          <button id="burger-menu"  class="inline-flex  float-right p-2 rounded-md focus:outline-none " aria-expanded="false">
             <span class="sr-only">Open main menu</span>
         
             <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -14,7 +14,7 @@ Vue.component('header-component', {
             <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
             </svg>
-            <div id="flyout-menu" class=" px-4 py-4 off rounded-b-md absolute mt-10 flyout-menu">
+            <div id="flyout-menu" class=" px-4 py-4 off z-40 rounded-b-md absolute mt-10 flyout-menu">
             <ul >
             <li class="px-2 py-2"> 
             
@@ -97,8 +97,8 @@ Vue.component('header-component', {
 // <img src="../Pure-Indulgence-by-Katherine-Logo.png" id="logo" class="pr-96 pl-10 " alt="Girl in a jacket" >
 //Register Page header component
 Vue.component('footer-component', {
-  template: `<footer class="mt-16 hidden md:block lg:block xl:block">
-    <div class="border-t md:px-4 md:pt-10 md:pb-5">
+  template: `<footer class="mt-16 ">
+    <div class="border-t md:px-4 md:pt-10 md:pb-5 hidden md:block lg:block xl:block">
       <div class="flex flex-wrap md:max-w-screen-lg mx-auto">
         
           
@@ -184,7 +184,37 @@ Vue.component('footer-component', {
       </section>
       </div>
     </div>
-    <div class="absolute right-0">
+    <div class="flex md:hidden lg:hidden xl:hidden p-4">
+    <div class="flex flex-wrap md:max-w-screen-lg mx-auto">
+      <img src="../misc/Pure Indulgence by Katherine Logo.png" alt="Girl in a jacket" class="w-32 md:w-32 lg:w-48">
+      </div>   
+      <a
+      class="uppercase text-xs font-bold tracking-wider text-pink-700 hidden md:block"
+      href="#"
+    >
+      Connect With Us
+    </a>
+    <article class="h-0 md:h-auto -mt-4 md:mt-0 ">
+      <ul class="my-5 text-sm tracking-wide">
+        <li class="my-3 tracking-wide transform hover:scale-110">
+          <a href="https://www.facebook.com/PureIndulgencebyKatherine/" class=" hover:text-pink-900 "><i class="fab fa-facebook-f pr-1"></i> Facebook</a>
+        </li>
+        <li class="my-3 tracking-wide transform hover:scale-110">
+          <a href="https://instagram.com/pureindulgencebykatherine?igshid=1ppqx2zsvvngb" class=" hover:text-pink-900 "><i class="fab fa-instagram pr-1"></i>Instagram</a>
+        </li>
+        <li class="my-3 tracking-wide transform hover:scale-110">
+          <a href="tel:+16476756746" class=" hover:text-pink-900 "><i class="fas fa-phone-alt pr-1  "></i>+1-(647)-675-6746</a>
+        </li>
+        <li class="my-3 tracking-wide transform hover:scale-110">
+        <a href="https://api.whatsapp.com/send?phone=+16476756746" class=" hover:text-pink-700 "><i class="fab fa-whatsapp pr-1"></i>Whatsapp</a>
+      </li>
+        
+      </ul>
+    </article>
+    
+    
+    </div>
+    <div class="absolute right-0 py-4">
     <a onclick="scroll_top()" class="items-end"><i class="fas fa-chevron-circle-up text-4xl hover:text-lg"></i></a>
     </div>
     <div class="max-w-screen-lg mx-auto border-none px-4">
@@ -201,7 +231,8 @@ Vue.component('footer-component', {
         </div>
       </section>
     </div> 
-    </footer>`,
+    </footer>
+    `,
 
 });
 

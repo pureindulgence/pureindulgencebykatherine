@@ -15,6 +15,7 @@
     <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript">  
     </script>
     <title>Admin</title>
+    <link rel="shortcut icon" href="../misc/pi_logo.png" type="image/x-icon" />
 </head>
 <body>
   <div id="page-container">
@@ -31,7 +32,7 @@
         </div>
 
 
-       <form class="space-y-8 divide-y divide-gray-200 ml-16 mr-16 p-16 shadow-xl" id="form-id" action="/item/add" method="POST" >
+       <form class="space-y-8 divide-y divide-gray-200 lg:ml-16 lg:mr-16 lg:p-16 p-4 shadow-xl" id="form-id" action="/item/add" method="POST" >
         <div class="space-y-8 divide-y divide-gray-200 sm:space-y-5">
           <div>
             <p class="text-3xl text-center">Add an Item</p>
@@ -71,7 +72,7 @@
       
               <div class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
                 <label for="about" class="block text-lg font-medium text-gray-700 sm:mt-px sm:pt-2">
-                  Description
+                  Description<span class="text-sm">(for specials, upto 100 characters only)</span>
                 </label>
                 <div class="mt-1 sm:mt-0 sm:col-span-2">
                   <textarea id="description" name="description" rows="3" class="max-w-lg shadow-sm block w-full shadow-lg focus:ring-indigo-500 focus:border-indigo-500 sm:text-lg border-gray-300 rounded-md"></textarea>
@@ -128,7 +129,7 @@
       <!-- <button onclick="uploadWidget()" class="ml-3 bg_footer inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-pink-700 bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Upload Images</button> -->
 
 
-      <form class="space-y-8 divide-y divide-gray-200 ml-16 mr-16 p-16 shadow-xl" id="delete-id" action="/item/delete" method="POST" >
+      <form class="space-y-8 divide-y divide-gray-200 lg:ml-16 lg:mr-16 lg:p-16 p-4  shadow-xl" id="delete-id" action="/item/delete" method="POST" >
         <div class="space-y-8 divide-y divide-gray-200 sm:space-y-5">
           <p class="text-3xl text-center">Delete an Item</p>
           <div class="mt-6 sm:mt-5 space-y-6 sm:space-y-5">
@@ -168,7 +169,7 @@
       </form>
 
 
-      <form class="space-y-8 divide-y divide-gray-200 ml-16 mr-16 p-16 shadow-xl" id="testimonial-id" action="/testimonial/add" method="POST" >
+      <form class="space-y-8 divide-y divide-gray-200  lg:ml-16 lg:mr-16 lg:p-16 p-4  shadow-xl" id="testimonial-id" action="/testimonial/add" method="POST" >
         <div class="space-y-8 divide-y divide-gray-200 sm:space-y-5">
           <div>
             <p class="text-3xl text-center">Add a Testimonial</p>
@@ -220,7 +221,7 @@
         </div>
       </form>
 
-      <form class="space-y-8 divide-y divide-gray-200 ml-16 mr-16 p-16 shadow-xl" id="delete-testimonial-id" action="/testimonial/delete" method="POST" >
+      <form class="space-y-8 divide-y divide-gray-200  lg:ml-16 lg:mr-16 lg:p-16 p-4  shadow-xl" id="delete-testimonial-id" action="/testimonial/delete" method="POST" >
         <div class="space-y-8 divide-y divide-gray-200 sm:space-y-5">
           <p class="text-3xl text-center">Delete a Testimonial</p>
           <div class="mt-6 sm:mt-5 space-y-6 sm:space-y-5">
