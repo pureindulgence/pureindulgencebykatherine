@@ -1,7 +1,7 @@
 Vue.component('header-component', {
   template: `<nav class=" shadow">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 m-2">
-      <div class="relative flex justify-end lg:menu_options h-16">
+      <div class="relative flex justify-end lg:ml-40 h-16">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           
           <button id="burger-menu"  class="inline-flex  float-right p-2 rounded-md focus:outline-none " aria-expanded="false">
