@@ -188,13 +188,14 @@ Vue.component('footer-component', {
     <div class="flex flex-wrap md:max-w-screen-lg mx-auto">
       <img src="../misc/Pure Indulgence by Katherine Logo.png" alt="Girl in a jacket" class="w-32 hidden md:w-32 lg:w-48">
       </div>   
-      <a
-      class="uppercase text-xs font-bold tracking-wider text-pink-700 hidden md:block"
+      
+    <div class=" ">
+    <a
+      class="uppercase text-xs font-bold tracking-wider text-pink-700 "
       href="#"
     >
       Connect With Us
     </a>
-    <article class="h-0 md:h-auto -mt-4 md:mt-0 ">
       <ul class="my-5 text-sm tracking-wide">
         <li class="my-3 tracking-wide transform hover:scale-110">
           <a href="https://www.facebook.com/PureIndulgencebyKatherine/" class=" hover:text-pink-900 "><i class="fab fa-facebook-f pr-1"></i> Facebook</a>
@@ -210,7 +211,7 @@ Vue.component('footer-component', {
       </li>
         
       </ul>
-    </article>
+    </div>
     
     
     </div>
