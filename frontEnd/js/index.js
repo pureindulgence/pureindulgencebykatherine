@@ -2,7 +2,7 @@ Vue.component('header-component', {
   template: `<nav class="fixed z-40 top-0 w-full shadow">
     <div class="">
       <div class="relative flex justify-center  h-16">
-        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <div class="absolute inset-y-0 left-0 flex items-center lg:hidden">
           
           <button id="burger-menu"  class="inline-flex  float-right p-2 rounded-md focus:outline-none " aria-expanded="false">
             <span class="sr-only">Open main menu</span>
@@ -16,12 +16,7 @@ Vue.component('header-component', {
             </svg>
             <div id="flyout-menu" class=" px-4 py-4 off z-40 rounded-b-md absolute mt-10 flyout-menu">
             <ul >
-            <li class="px-2 py-2"> 
             
-            <img src="misc/pi_logo.png" class="test-pink-700 w-20" alt="Pure Indulgence by Katherine">
-             
-            
-            </li>
             <li class="px-2 py-2"> 
             <a href="index.html" id="home1" class="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
             Home
@@ -43,13 +38,13 @@ Vue.component('header-component', {
           </button>
         </div>
 
-        <div class=" flex-1 flex justify-center  lg:hidden md:hidden xl:hidden">
-        <img src="misc/pi_logo.png" class="test-pink-700 w-20" alt="Pure Indulgence by Katherine">
+        <div class=" flex-1 flex justify-center  inset-auto lg:hidden  md:hidden xl:hidden">
+        <a href="index.html"><img src="misc/pi_logo.png" class="test-pink-700 w-20" alt="Pure Indulgence by Katherine"></a>
          
         </div>
         
-        <div class=" absolute left-0 flex items-center idden lg:flex  sm:static sm:inset-auto  hidden  sm:flex sm:space-x-8">
-        <img src="misc/pi_logo.png" class="test-pink-700 w-20" alt="Pure Indulgence by Katherine">
+        <div class=" absolute left-0 flex items-center hidden lg:flex  sm:static sm:inset-auto md:hidden  sm:space-x-8">
+        <a href="index.html"<img src="misc/pi_logo.png" class="test-pink-700 w-20" alt="Pure Indulgence by Katherine"></a>
          
         </div>
       
@@ -219,7 +214,9 @@ new Vue({
     var burger_menu = document.getElementById('burger-menu');
     var e = document.getElementById('flyout-menu');
     burger_menu.onclick = function() {
-       
+      const width = ((window.screen.width)*80)/100;
+      console.log(width)
+      e.style.width = width +"px";
         e.classList.toggle('off');
     }
 
