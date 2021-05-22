@@ -33,13 +33,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       
       <header-component></header-component>
   
-      <main class="m-2 lg:px-10 sm:p-4">
-        <div class=" w-full flex md:hidden lg:hidden xl:hidden">
+      <main class="m-2 relative">
+        <div class="lg:px-10 sm:p-4 w-full flex md:hidden lg:hidden xl:hidden">
           <img src="../misc/chef.jpeg" class=" w-3/5 h-3/5 p-5 bg-custom1 float-right mx-auto shadow-lg rounded-md" alt="" ></div>
-        <h2 class="mt-6 text-center text-pink-700 text-3xl font-extrabold text-gray-900 anime_title2" style="opacity:0;">
+        <h1 class="mt-6 text-center text-pink-700 text-3xl font-extrabold text-gray-900 anime_title2" style="opacity:0;">
          About Katherine
-        </h2>
-        <div class="text-sm md:text-3xl lg:text-3xl xl:text-3xl">
+        </h1>
+        <div class="lg:px-10 sm:p-4 text-sm md:text-3xl lg:text-3xl xl:text-3xl">
 
           <div class=" w-full hidden md:block lg:block xl:block">
           <img src="../misc/chef.jpeg" class="relative  w-1/5 h-1/5 p-5 bg-custom1 float-right  shadow-lg rounded-md" alt="" ></div>
@@ -50,11 +50,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             Having been trained in French classical cooking, Katherine’s style of baking is a refreshing mix that pays homage to her Indian roots. She is eager to introduce you to a world of moist, Indian style cream cakes that she grew up eating and is certain, will bring you happiness!</p>
         </div>
 
-        <h2 class="mt-6 text-center text-pink-700 text-3xl font-extrabold text-gray-900 anime_title" style="opacity:0;">
+        <h1 class="lg:px-10 sm:p-4 mt-6 text-center text-pink-700 text-3xl font-extrabold text-gray-900 anime_title" style="opacity:0;">
           About Pure indulgence 
-         </h2>
-         <div class=" text-sm md:text-3xl lg:text-3xl xl:text-3xl">
-           <p class="mt-4 px-4 anime_text" style="opacity:0;">
+         </h1>
+         <div class="lg:px-10 sm:p-4 text-sm md:text-3xl lg:text-3xl xl:text-3xl">
+           <p class="mt-4 px-4 lg:px-10 sm:p-4 anime_text" style="opacity:0;">
             A labour of love for our cake decorator-owner Katherine, ‘Pure Indulgence’ opened in Toronto, Canada, in December 2020.</p>
             <p class="mt-4 px-4 anime_text" style="opacity:0;">
             Having grown up in house full of professionals, where baking and cake decorating was considered a hobby~skill, Katherine was enthusiastic about starting her venture from a very young age; and so she did at the age of 22...Pure Indulgence took its birth in 2014, in Bangalore, India. The bakery saw two successful years of business in India and then our owner decided to expand her skill set which brought her to Toronto, Canada in 2016. </p>
@@ -64,15 +64,17 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             With a keen eye for detail and a passion for creating the moistest cakes you’ve ever eaten, Katherine and ‘Pure Indulgence’ offer Toronto a variety of Indian style classic fresh cream cakes including ‘Pineapple pastries’, ‘Butterscotch’ and ‘Blackforest’ as well as exotic tropical flavours such as ‘Mango-Lychee’ and ‘Apricot-Orange’ gateau. In addition to the variety of Indian style fresh cream cakes, Pure Indulgence also offers more classic cakes ( and pound cakes) cupcakes, macarons, chocolates and more. Using only the best ingredients and made with love, our bespoke baked goodies are a source of joy to many and we cannot wait to be part of your next celebration.</p>
          </div>
         
+         <img src="../misc/24098.svg" class="absolute top-20 " style="width:10%;">
+        <img src="../misc/24098.svg" class="absolute inset-y-1/2 right-0 " style="width:10%;">
 
+        <div id="testimonials" class="slideshow-container relative">
 
-        <div id="testimonials" class="slideshow-container hidden md:block lg:block xl:block">
-
          
          
          
-          
-         
+          <img src="../misc/24098.svg" class="absolute right-0 top-20 " style="width:10%;">
+          <img src="../misc/24098.svg" class="absolute inset-1/2 " style="width:10%;">
+          <img src="../misc/24098.svg" class="absolute top-10 " style="width:10%;">
           
           </div>
           <br>
@@ -100,49 +102,82 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
            testimonials.forEach(element => {
             const rand_int = Math.floor(Math.random() * 3)+1;
             const index_testimonial = testimonials.indexOf(element)+1;
-              const markup = `<div  class="mySlides testomonial fade ml-40 mr-40 mt-40" >
-            <div class="layer_${rand_int} ">
+              const markup = `<div  class="mySlides testomonial fade  mt-40" id="testimonial_${index_testimonial}">
+            <div class="">
             <div class="numbertext text-xl"> ${index_testimonial}/ ${len_testimonials}</div>
             
            
           </div>
-          <div class="text text-xl ">"${element.testimonialDescription}."<br><br><span class="text-3xl ">    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  -${element.authorName}</span></div>
-          
+          <div class="text text-xl p-10 lg:p-40 overflow-hidden">"${element.testimonialDescription}."<br><br><span class="text-3xl ">      -${element.authorName}</span></div>
+          <i class="fas fa-arrow-left absolute bottom-1/2 text-3xl left-0 lg:left-10" id="left_${index_testimonial}" onclick="move_left(this)"></i>
+          <i class="fas fa-arrow-right absolute bottom-1/2 text-3xl right-0 lg:right-10" id="right_${index_testimonial}" onclick="move_right(this)"></i>
           </div>`;
 
-          const dot_markup = `<span class="dot"></span> `;
+          // const dot_markup = `<span class="dot"></span> `;
               
           document.getElementById('testimonials').insertAdjacentHTML('beforeend',markup);
-          document.getElementById('testimonials_dots').insertAdjacentHTML('beforeend',dot_markup);
+          // document.getElementById('testimonials_dots').insertAdjacentHTML('beforeend',dot_markup);
 
            })
             
-           var slideIndex = 0;
-showSlides();
+           const testimonial_cards = document.getElementsByClassName("testomonial");
+           for(var i=0; i<testimonial_cards.length;i++)
+           {
+             if(i!==0)
+             {
+               testimonial_cards[i].classList.add("hidden");
+             }
+           }
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 10000); // Change image every 2 seconds
-}
            
         })
         .catch((error) => {
             console.log(error);
         })
 
+function move_right(el)
+{
+  const test_cards = document.getElementsByClassName("testomonial");
+  let index = el.id.replace("right_","");
+  const id = "testimonial_"+index;
+  // console.log(id)
+  if(parseInt(index)<test_cards.length){
+    const index_next = parseInt(index)+1;
+    const id_next = "testimonial_"+index_next;
+    // console.log(id_next)
+    document.getElementById(id).classList.add("hidden");
+    document.getElementById(id_next).classList.remove("hidden");
+  }
+  else if((parseInt(index)===test_cards.length)){
+    const index_next = 1;
+    const id_next = "testimonial_"+index_next;
+    // console.log(id_next)
+    document.getElementById(id).classList.add("hidden");
+    document.getElementById(id_next).classList.remove("hidden");
+  }
+}
 
+function move_left(el)
+{
+  const test_cards = document.getElementsByClassName("testomonial");
+  let index = el.id.replace("left_","");
+  const id = "testimonial_"+index;
+  // console.log(id)
+  if(parseInt(index)>1){
+    const index_prev = parseInt(index)-1;
+    const id_prev = "testimonial_"+index_prev;
+    // console.log(id_next)
+    document.getElementById(id).classList.add("hidden");
+    document.getElementById(id_prev).classList.remove("hidden");
+  }
+  else if((parseInt(index)===1)){
+    const index_prev = test_cards.length;
+    const id_prev = "testimonial_"+index_prev;
+    // console.log(id_next)
+    document.getElementById(id).classList.add("hidden");
+    document.getElementById(id_prev).classList.remove("hidden");
+  }
+}
 </script>
 
 

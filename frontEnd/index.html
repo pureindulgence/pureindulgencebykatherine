@@ -27,11 +27,11 @@
 
       <header-component></header-component>
 
-      <main class="sm:px-1">
+      <main class="sm:px-1 relative">
         <div id="logo_gif_container">
 
           <img src="../misc/Pure Indulgence by Katherine Logo.png" id="logo_gif" onmouseover="gif_function()"
-            onmouseout="png_function()" class="ml-auto mr-auto mt-10" alt="">
+            onmouseout="png_function()" class="ml-auto mr-auto mt-10" alt="logo gif">
         </div>
 
         <h1 class="mt-6 text-center text-pink-700 text-3xl text-gray-900 anime_title" style="opacity:0;">
@@ -67,7 +67,8 @@
 
           </ul>
         </h1>
-
+        <img src="../misc/24098.svg" class="absolute top-20 " style="width:10%;">
+        <img src="../misc/24098.svg" class="absolute top-40 right-0 " style="width:10%;">
         <div id="why" class="why grid grid-cols-1  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 mt-20 mr-20 ml-20">
           <div class="logo">
             <img src="../misc/Pure Indulgence by Katherine Logo.png" alt="Girl in a jacket"
@@ -134,7 +135,7 @@
 
           if (element.category === "specials") {
             // console.log(element.category)
-            const carousel_markup = `
+            const carousel_markup = `<a href="${element.instalink}">
         <div class="mySlides fade col-span-1 flex flex-col text-center bg-white rounded-lg shadow-xl divide-y divide-gray-200 m-10"">
   
           <div class="flex-1 flex flex-col p-8">
@@ -149,7 +150,7 @@
             </dl>
           </div>
   
-</div>
+</div></a>
         `;
             document.getElementById('specials').insertAdjacentHTML('beforeend', carousel_markup)
           }
