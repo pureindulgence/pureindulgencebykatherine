@@ -1,7 +1,7 @@
 Vue.component('header-component', {
-  template: `<nav class=" shadow">
-    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 m-2">
-      <div class="relative flex justify-end lg:ml-40 h-16">
+  template: `<nav class="fixed z-40 top-0 w-full shadow">
+    <div class="">
+      <div class="relative flex justify-center  h-16">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           
           <button id="burger-menu"  class="inline-flex  float-right p-2 rounded-md focus:outline-none " aria-expanded="false">
@@ -43,7 +43,7 @@ Vue.component('header-component', {
           </button>
         </div>
         
-        <div class="logo_container absolute inset-y-0 flex items-center  pr-2 mr-20 sm:static sm:inset-auto sm:ml-6 sm:pr-0 hidden sm:ml-6 sm:flex sm:space-x-8">
+        <div class=" absolute left-0 flex items-center idden lg:flex  sm:static sm:inset-auto  hidden  sm:flex sm:space-x-8">
         <img src="misc/pi_logo.png" class="test-pink-700 w-20" alt="Pure Indulgence by Katherine">
          
         </div>
@@ -52,11 +52,9 @@ Vue.component('header-component', {
   
          
           
-            <div class="flex-1 flex items-end  right-0 sm:items-stretch  ml-50">
-              <div class="flex-shrink-0 flex items-center">
-                
-              </div>
-              <div class="hidden sm:ml-6 sm:flex sm:space-x-8 ">
+            <div class="flex-1 flex justify-center  hidden lg:flex">
+              
+              <div class=" sm:ml-6 sm:flex sm:space-x-8 ">
               <a href="index.html" id="home" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2  text-sm font-medium">
               Home
             </a>
@@ -81,15 +79,7 @@ Vue.component('header-component', {
     </div>
   
     
-    <div class="hidden sm:hidden">
-      <div class="pt-2 pb-4 space-y-1">
-        
-        <a href="#" class="bg-indigo-50 border-indigo-500 text-indigo-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Dashboard</a>
-        <a href="#" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Team</a>
-        <a href="#" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Projects</a>
-        <a href="#" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Calendar</a>
-      </div>
-      </div>
+   
       </div>
   </nav>`,
 })
@@ -98,24 +88,16 @@ Vue.component('header-component', {
 //Register Page header component
 Vue.component('footer-component', {
   template: `<footer class="mt-16 ">
-    <div class="border-t md:px-4 md:pt-10 md:pb-5 hidden md:block lg:block xl:block">
-      <div class="flex flex-wrap md:max-w-screen-lg mx-auto">
+    <div class="border-t relative md:px-4 md:pt-10 md:pb-5 hidden md:block lg:block xl:block">
+      <div class="flex flex-wrap  ">
         
           
         <section
           class="relative text-gray-700 font-light font-light border-b px-4 pb-4 md:py-3 w-full md:border-none md:w-1/4"
         >
-          <div class="md:hidden">
-            <button
-              onclick="toggleFooterSection(event)"
-              class="uppercase text-xs font-bold tracking-wider text-pink-700 focus:outline-none border-t border-white py-4 w-full text-left"
-              type="button"
-            >
-              Helpful Links
-            </button>
-          </div>
+          
           <a
-            class="uppercase text-xs font-bold tracking-wider text-pink-700 hidden md:block"
+            class="uppercase text-xs font-bold tracking-wider  hidden md:block"
             href="#"
           >
             Connect With Us
@@ -139,44 +121,10 @@ Vue.component('footer-component', {
           </article>
         </section>
         
-        <section
-          class="relative text-gray-700 font-light font-light border-b px-4 pb-4 md:py-3 w-full md:border-none md:w-1/4"
-        >
-          <div class="hidden ">
-            <button
-              onclick="toggleFooterSection(event)"
-              class="uppercase text-xs font-bold tracking-wider text-pink-700 focus:outline-none border-t border-white py-4 w-full text-left"
-              type="button"
-            >
-              Quisque
-            </button>
-          </div>
-          <a
-            class="uppercase text-xs font-bold tracking-wider text-pink-700 hidden "
-            href="#"
-          >
-            Quisque
-          </a>
-          <article class="h-0 md:h-auto -mt-4 md:mt-0 overflow-hidden">
-            <ul class="my-5 text-sm tracking-wide hidden">
-              <li class="my-3 tracking-wide">
-                <a href="#">Finibus nulla eget</a>
-              </li>
-              <li class="my-3 tracking-wide">
-                <a href="#">Pellentesque</a>
-              </li>
-              <li class="my-3 tracking-wide">
-                <a href="#">Duis efficitur</a>
-              </li>
-              <li class="my-3 tracking-wide">
-                <a href="#">Cras at lacus</a>
-              </li>
-            </ul>
-          </article>
-        </section>
+       
      
       <section
-      class="relative text-gray-700 font-light font-light border-b px-4 pb-4 md:py-3 w-full md:border-none md:w-1/4"
+      class=" absolute right-0 text-gray-700 font-light font-light border-b px-4 pb-4 md:py-3 w-full md:border-none md:w-1/4"
     >
       <div class="flex flex-wrap md:max-w-screen-lg mx-auto">
       <img src="../misc/Pure Indulgence by Katherine Logo.png" alt="Girl in a jacket" class="w-16 md:w-32 lg:w-48">
@@ -186,7 +134,7 @@ Vue.component('footer-component', {
     </div>
     <div class="flex md:hidden lg:hidden xl:hidden p-4">
     <div class="flex flex-wrap md:max-w-screen-lg mx-auto">
-      <img src="../misc/Pure Indulgence by Katherine Logo.png" alt="Girl in a jacket" class="w-32 hidden md:w-32 lg:w-48">
+      <img src="../misc/Pure Indulgence by Katherine Logo.png" alt="pure indulgence log" class="w-32 hidden md:w-32 lg:w-48">
       </div>   
       
     <div class=" ">
@@ -215,10 +163,10 @@ Vue.component('footer-component', {
     
     
     </div>
-    <div class="absolute right-0 py-4">
+    <div class="absolute right-0 py-4 bottom-20">
     <a onclick="scroll_top()" class="items-end"><i class="fas fa-chevron-circle-up text-4xl hover:text-lg"></i></a>
     </div>
-    <div class="max-w-screen-lg mx-auto border-none px-4">
+    <div class=" border-none ">
       <section
         class="flex flex-col md:flex-row md:justify-between md:border-solid md:border-t text-gray-700 font-light text-sm pt-4 pb-6 md:pt-5 md:pb-6 w-full"
       >
