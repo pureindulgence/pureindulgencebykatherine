@@ -8,6 +8,7 @@ router.post('/add', async(req,res) => {
 
     const item = new Item({
         name: req.body.name,
+        instalink:req.body.instalink,
         description:req.body.description,
         category:req.body.category,
         photo:req.body.photo

@@ -1,142 +1,148 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css" rel="stylesheet"> -->
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="https://kit.fontawesome.com/b2e5f27fec.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lobster&display=swap" rel="stylesheet"> 
-<link rel="shortcut icon" href="../misc/pi_logo.png" type="image/x-icon" />
-<link
-rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
-    <title>Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css" rel="stylesheet"> -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="https://kit.fontawesome.com/b2e5f27fec.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lobster&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="../misc/pi_logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Home</title>
 </head>
+
 <body>
   <div id="page-container">
-   
- 
-  <div id="app">
-    
-    <header-component></header-component>
 
-    <main class="sm:px-1">
-      <div id="logo_gif_container" >
 
-      <img src="../misc/Pure Indulgence by Katherine Logo.png" id="logo_gif" onmouseover="gif_function()" onmouseout="png_function()" class="ml-auto mr-auto mt-10" alt="">
+    <div id="app">
+
+      <header-component></header-component>
+
+      <main class="sm:px-1">
+        <div id="logo_gif_container">
+
+          <img src="../misc/Pure Indulgence by Katherine Logo.png" id="logo_gif" onmouseover="gif_function()"
+            onmouseout="png_function()" class="ml-auto mr-auto mt-10" alt="">
+        </div>
+
+        <h1 class="mt-6 text-center text-pink-700 text-3xl text-gray-900 anime_title" style="opacity:0;">
+          SEASONAL SPECIALS
+        </h1>
+
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3  m-10" id="specials">
+
+
+
+
+
+        </div>
+
+        <h1 class="mt-6 text-center text-pink-700 text-3xl  text-gray-900 anime_title" style="opacity:0;">
+          BEST SELLERS
+
+          <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 m-20 " id="best_sellers">
+
+
+
+
+          </ul>
+        </h1>
+
+        <h1 class="mt-6 text-center text-pink-700 text-3xl  text-gray-900 anime_title" style="opacity:0;">
+          FEATURED COLLECTION
+
+          <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 m-20" id="featured_collection">
+
+
+
+
+          </ul>
+        </h1>
+
+        <div id="why" class="why grid grid-cols-1  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 mt-20 mr-20 ml-20">
+          <div class="logo">
+            <img src="../misc/Pure Indulgence by Katherine Logo.png" alt="Girl in a jacket"
+              class="w-32 md:w-32 lg:w-64">
+          </div>
+          <div>
+            <h1 class="anime_title" style="opacity:0;">Why Pure Indulgence?</h1>
+            <p class="anime_text" style="opacity:0;">A labour of love for our cake decorator-owner Katherine, ‘Pure
+              Indulgence’ opened in Toronto, Canada in December 2020. Katherine is originally from Bangalore, India and
+              this is where Pure Indulgence took its birth, in the year 2014. With a keen eye for detail and a passion
+              for creating the moistest cakes you’ve ever eaten, Pure Indulgence offers a variety of sweet treats
+              including (but not limited to) Indian style fresh cream cakes, classic cakes, cupcakes, macarons,
+              chocolates and more. Using only the best ingredients and made with love, our bespoke baked goodies are a
+              source of joy to many and we cannot wait to be part of your next celebration. </p>
+          </div>
+
+        </div>
+
+        <div class="instagram_port items-center mt-10 ">
+
+
+
+        </div>
+      </main>
+      <footer-component></footer-component>
+
     </div>
 
-    <h1  class="mt-6 text-center text-pink-700 text-3xl font-extrabold text-gray-900 anime_title2" style="opacity:0;">
-      SPRING SPECIALS
-    </h1>
- 
-      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3  m-10" id = "specials">
-       
-        
-       
-     
-        
-      </div>
-    
-      <h1  class="mt-6 text-center text-pink-700 text-3xl font-extrabold text-gray-900 anime_title" style="opacity:0;">
-        BEST SELLERS
+  </div>
 
-        <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 m-20 " id = "best_sellers">
-       
-        
-      
-        
-        </ul>
-      </h1>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/active_tab.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-      <h1  class="mt-6 text-center text-pink-700 text-3xl font-extrabold text-gray-900 anime_title" style="opacity:0;">
-        FEATURED COLLECTION
-
-        <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 m-20" id="featured_collection">
-       
-        
-      
-        
-        </ul>
-      </h1>
-
-      <div id="why" class="why grid grid-cols-1  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 mt-20 mr-20 ml-20">
-        <div class="logo">
-          <img src="../misc/Pure Indulgence by Katherine Logo.png" alt="Girl in a jacket" class="w-32 md:w-32 lg:w-64">
-        </div>
-        <div>
-          <h1 class="anime_title" style="opacity:0;">Why Pure Indulgence?</h1>
-          <p class="anime_text" style="opacity:0;">A labour of love for our cake decorator-owner Katherine, ‘Pure Indulgence’ opened in Toronto, Canada in December 2020. Katherine is originally from Bangalore, India and this is where Pure Indulgence took its birth, in the year 2014.  With a keen eye for detail and a passion for creating the moistest cakes you’ve ever eaten, Pure Indulgence offers a variety of sweet treats including (but not limited to) Indian style fresh cream cakes, classic cakes, cupcakes, macarons, chocolates and more. Using only the best ingredients and made with love, our bespoke baked goodies are a source of joy to many and we cannot wait to be part of your next celebration. </p>
-        </div>
-
-      </div>
-
-      <div class="instagram_port items-center mt-10 ">
-        
-         
-          
-      </div>
-    </main>
-    <footer-component ></footer-component>
-    
- </div>
-
-</div>
-     
- <script type="text/javascript" src="js/index.js"></script>
- <script type="text/javascript" src="js/active_tab.js"></script>
- <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
- <script type="text/javascript"  >
+  <script type="text/javascript">
 
 
-      
-     
 
-   
-        axios.get('/index')
-        .then((response) => {
-            items = response.data;
-          
-            items.forEach(element => {
-              const markup = ` <li style="opacity:0;" class="col-span-1 anime_card flex flex-col text-center bg-white rounded-lg shadow-xl divide-y divide-gray-200 m-10" >
+
+
+
+    axios.get('/index')
+      .then((response) => {
+        items = response.data;
+
+        items.forEach(element => {
+          const markup = `<a href="${element.instalink}"> <li style="opacity:0;" class="col-span-1 anime_card flex flex-col text-center bg-white rounded-lg shadow-xl divide-y divide-gray-200 m-10" >
           <div class="flex-1 flex  flex-col p-8">
             <img class="w-64 h-64 flex-shrink-0 mx-auto bg-black rounded-lg" src=${element.photo} alt="">
-            <h3 class="mt-6 text-gray-900 text-sm font-medium">${element.name}</h3>
+            <h3 class="mt-6 text-gray-900 text-sm card_title ">${element.name}</h3>
             <dl class="mt-1 flex-grow flex flex-col justify-between">
               <dt class="sr-only">Title</dt>
-              <dd class="text-gray-500 text-sm">${element.description}
+              <dd class="text-gray-500 descp text-sm">${element.description}
               </dd>
               <dt class="sr-only">Role</dt>
              
             </dl>
           </div>
           
-        </li>`
-
-        
+        </li></a>`
 
 
-        if(element.category === "specials")
-        {
-          // console.log(element.category)
-          const carousel_markup = `
+
+
+          if (element.category === "specials") {
+            // console.log(element.category)
+            const carousel_markup = `
         <div class="mySlides fade col-span-1 flex flex-col text-center bg-white rounded-lg shadow-xl divide-y divide-gray-200 m-10"">
   
           <div class="flex-1 flex flex-col p-8">
             <img class="w-64 h-64 flex-shrink-0 mx-auto bg-black rounded-lg" src=${element.photo} alt="">
-            <h3 class="mt-6 text-gray-900 text-sm font-medium">${element.name}</h3>
+            <h3 class="mt-6 text-gray-900 text-sm card_title">${element.name}</h3>
             <dl class="mt-1 flex-grow flex flex-col justify-between">
               <dt class="sr-only">Title</dt>
-              <dd class="text-gray-500 text-sm">${element.description}
+              <dd class="text-gray-500 descp text-sm">${element.description}
               </dd>
               <dt class="sr-only">Role</dt>
              
@@ -145,78 +151,106 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   
 </div>
         `;
-          document.getElementById('specials').insertAdjacentHTML('beforeend',carousel_markup)
+            document.getElementById('specials').insertAdjacentHTML('beforeend', carousel_markup)
+          }
+          else if (element.category === "best_sellers") {
+            document.getElementById('best_sellers').insertAdjacentHTML('beforeend', markup)
+
+          }
+          else {
+            document.getElementById('featured_collection').insertAdjacentHTML('beforeend', markup)
+          }
+          var slideIndex = 0;
+          showSlides();
+
+
+
+          function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            // console.log(slides)
+            slideIndex++;
+            if (slideIndex + 2 > slides.length) { slideIndex = 1 }
+            // console.log(slides)
+            slides[slideIndex - 1].style.display = "block";
+            if (slides.length > 2) {
+              slides[slideIndex].style.display = "block";
+              slides[slideIndex + 1].style.display = "block";
+            }
+
+
+            // console.log(slideIndex)
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+          }
+
+
+
+        });
+
+        const descp = document.getElementsByClassName("descp");
+        for(var i=0;i<descp.length;i++)
+        {
+          descp[i].innerHTML = descp[i].innerHTML.slice(0,200)+"...";
         }
-        else if(element.category === "best_sellers") {
-          document.getElementById('best_sellers').insertAdjacentHTML('beforeend',markup)
+        const anime_cards = document.getElementsByClassName("anime_card");
 
-        }
-        else {
-          document.getElementById('featured_collection').insertAdjacentHTML('beforeend',markup)
-        }
-        var slideIndex = 0;
-showSlides();
+        function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+        Array.prototype.forEach.call(anime_cards, anime_card => {
+        // console.log(anime_card)
+        document.addEventListener('scroll', function(){
+            if(isInViewport(anime_card)){
+                // console.log("triggered")
+                $(anime_card).show().addClass('animate__animated animate__fadeInUp')
+            }
 
+        });
+    })
 
+      })
+      .catch((error) => {
+        console.log(error);
+      })
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  // console.log(slides)
-  slideIndex++;
-  if (slideIndex+2 > slides.length) {slideIndex = 1}
-  // console.log(slides)
-  slides[slideIndex-1].style.display = "block";
-  if(slides.length>2) {
-    slides[slideIndex].style.display = "block";
-    slides[slideIndex+1].style.display = "block";
-  }
-
- 
-  // console.log(slideIndex)
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
-} 
-              
-              
-              
-            });
-            
-            
-           
-        })
-        .catch((error) => {
-            console.log(error);
-        })
-
-   function gif_function() {
+    function gif_function() {
       document.getElementById("logo_gif").setAttribute("src", "../misc/logo.gif");
-    }  
+    }
 
     function png_function() {
       document.getElementById("logo_gif").setAttribute("src", "../misc/Pure Indulgence by Katherine Logo.png");
     }
 
     window.addEventListener('load', (event) => {
-  gif_function();
+      gif_function();
 
-  setInterval(function(){png_function();},9000);
-});
+      setInterval(function () { png_function(); }, 9000);
+    });
+
+
     
 
-</script>
- 
+
+  </script>
+
 
 
 
 
 
 </body>
+
 </html>
 
 
 
 <!-- cloudinary cloud name - dsbuydzt3 -->
-

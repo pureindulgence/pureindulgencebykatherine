@@ -8,12 +8,12 @@ const itemSchema = new Schema({
         min: 6,
         max: 100
     },
-    // username: {
-    //     type: String,
-    //     required: true,
-    //     min: 6,
-    //     max: 100
-    // },
+    instalink: {
+        type: String,
+        required: true,
+        min: 6,
+        max: 250
+    },
     description: {
         type: String,
         required: true,

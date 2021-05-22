@@ -8,6 +8,11 @@
   src:url(misc/Montserrat-Regular.ttf);
 }
 
+@font-face{
+  font-family: Bold;
+  font-weight: 700;
+  src:url(misc/Montserrat-Bold.ttf);
+}
 body {
   font-family: Montserrat-Regular;;
 }
@@ -60,8 +65,14 @@ footer {
     
 }
 
+.card_title{
+  font-family: Bold;
+}
+
+
 h1 {
-  text-shadow: 1px 1px gray;
+  font-family: Bold;
+  /* text-shadow: 1px 1px gray; */
   /* font-weight: bolder; */
 }
 

@@ -30,7 +30,7 @@ tab_change.className = tab_change.className.replace(cls,new_cls);
 // for anime
 
 const anime_titles = document.getElementsByClassName("anime_title");
-const anime_cards = document.getElementsByClassName("anime_card");
+
 const anime_texts = document.getElementsByClassName("anime_text");
 const anime_titles2 = document.getElementsByClassName("anime_title2");
 const anime_texts2 = document.getElementsByClassName("anime_text2");
@@ -76,15 +76,7 @@ function isInViewport(element) {
 })
 
 
-    Array.prototype.forEach.call(anime_cards, anime_card => {
-        document.addEventListener('scroll', function(){
-            if(isInViewport(anime_card)){
-                // console.log("triggered")
-                $(anime_card).show().addClass('animate__animated animate__fadeInUp')
-            }
-
-        });
-    })
+   
 
 
     Array.prototype.forEach.call(anime_texts, anime_text => {

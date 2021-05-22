@@ -35,12 +35,17 @@ Vue.component('header-component', {
             <li class="px-2 py-2"> <a href="gifting.html" id="gifting1" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
             Gifting
           </a></li>
-            <li class="px-2 py-2"><a href="login.html" id="login1" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1  border-b-2 text-sm font-medium">
-            Login
+            <li class="px-2 py-2"><a href="#" id="login1" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1  border-b-2 text-sm font-medium">
+            Menu
           </a></li>
             </ul>
             </div>
           </button>
+        </div>
+
+        <div class=" flex-1 flex justify-center  lg:hidden md:hidden xl:hidden">
+        <img src="misc/pi_logo.png" class="test-pink-700 w-20" alt="Pure Indulgence by Katherine">
+         
         </div>
         
         <div class=" absolute left-0 flex items-center idden lg:flex  sm:static sm:inset-auto  hidden  sm:flex sm:space-x-8">
@@ -67,8 +72,8 @@ Vue.component('header-component', {
               <a href="gifting.html" id="gifting" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
               Gifting
             </a>
-              <a href="login.html" id="login" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1  border-b-2 text-sm font-medium">
-                Login
+              <a href="#" id="login" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1  border-b-2 text-sm font-medium">
+                Menu
               </a>
        
             
@@ -126,18 +131,15 @@ Vue.component('footer-component', {
       <section
       class=" absolute right-0 text-gray-700 font-light font-light border-b px-4 pb-4 md:py-3 w-full md:border-none md:w-1/4"
     >
-      <div class="flex flex-wrap md:max-w-screen-lg mx-auto">
+      <div class="">
       <img src="../misc/Pure Indulgence by Katherine Logo.png" alt="Girl in a jacket" class="w-16 md:w-32 lg:w-48">
       </div>
       </section>
       </div>
     </div>
-    <div class="flex md:hidden lg:hidden xl:hidden p-4">
-    <div class="flex flex-wrap md:max-w-screen-lg mx-auto">
-      <img src="../misc/Pure Indulgence by Katherine Logo.png" alt="pure indulgence log" class="w-32 hidden md:w-32 lg:w-48">
-      </div>   
-      
-    <div class=" ">
+     
+      <div class="flex md:hidden lg:hidden xl:hidden justify-between">
+    <div class=" p-4">
     <a
       class="uppercase text-xs font-bold tracking-wider text-pink-700 "
       href="#"
@@ -160,7 +162,11 @@ Vue.component('footer-component', {
         
       </ul>
     </div>
-    
+    <div class="flex md:hidden lg:hidden xl:hidden p-4">
+    <div class=" ">
+      <img src="../misc/Pure Indulgence by Katherine Logo.png" alt="pure indulgence log" class="w-32 md:w-32 lg:w-48">
+      </div> 
+    </div>
     
     </div>
     <div class="absolute right-0 py-4 bottom-20">
