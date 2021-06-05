@@ -4,7 +4,7 @@ Vue.component('header-component', {
       <div class="relative flex justify-center  h-16">
         <div class="absolute inset-y-0 left-0 flex items-center lg:hidden">
           
-          <button id="burger-menu"  class="inline-flex  float-right p-2 rounded-md focus:outline-none " aria-expanded="false">
+          <button id="burger-menu"  class="inline-flex transform hover:scale-110 float-right p-2 rounded-md focus:outline-none " aria-expanded="false">
             <span class="sr-only">Open main menu</span>
         
             <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
