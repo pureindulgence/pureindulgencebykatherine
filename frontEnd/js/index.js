@@ -1,5 +1,5 @@
 Vue.component('header-component', {
-  template: `<nav class="fixed z-40 top-0 w-full shadow">
+  template: `<nav class="fixed z-40 top-0 w-full">
     <div class="">
       <div class="relative flex justify-center  h-16">
         <div class="absolute inset-y-0 left-0 flex items-center lg:hidden">
@@ -14,7 +14,7 @@ Vue.component('header-component', {
             <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
             </svg>
-            <div id="flyout-menu" class=" px-4 py-4 off z-40 rounded-b-md absolute mt-10 flyout-menu">
+            <div id="flyout-menu" class=" px-4 py-4 off z-40 rounded-b-md absolute mt-10 flyout-menu shadow-lg">
             <ul >
             
             <li class="px-2 py-2"> 
@@ -38,7 +38,7 @@ Vue.component('header-component', {
           </button>
         </div>
 
-        <div class=" flex-1 flex justify-center  inset-auto lg:hidden  md:hidden xl:hidden">
+        <div class=" flex-1 flex justify-center sm:space-x-8 absolute  lg:hidden  md:hidden xl:hidden" style="top:-10px">
         <a href="index.html"><img src="misc/pi_logo.png" class="test-pink-700 w-20" alt="Pure Indulgence by Katherine"></a>
          
         </div>
@@ -52,7 +52,7 @@ Vue.component('header-component', {
   
          
           
-            <div class="flex-1 flex justify-center  hidden lg:flex">
+            <div class="flex-1  -ml-4 flex justify-center  hidden lg:flex">
               
               <div class=" sm:ml-6 sm:flex sm:space-x-8 ">
               <a href="index.html" id="home" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2  text-sm font-medium">
@@ -215,7 +215,7 @@ new Vue({
     var e = document.getElementById('flyout-menu');
     burger_menu.onclick = function() {
       const width = ((window.screen.width)*80)/100;
-      console.log(width)
+      // console.log(width)
       e.style.width = width +"px";
         e.classList.toggle('off');
     }
@@ -225,5 +225,20 @@ new Vue({
   //     e.classList.toggle('off');
   // }
 
-  
-  
+  function currentScrollPercentage()
+{
+    return ((document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight) * 100);
+}
+
+
+  window.addEventListener("scroll", function (){
+      const scrollP = currentScrollPercentage();
+      if(scrollP > 15){
+        document.getElementsByTagName("nav")[0].style.backgroundColor = "#E2C996";
+        document.getElementsByClassName("flyout-menu")[0].style.backgroundColor = "#E2C996";
+        
+      }else{
+        document.getElementsByTagName("nav")[0].style.backgroundColor = "#ffffff";
+        document.getElementsByClassName("flyout-menu")[0].style.backgroundColor = "#ffffff";
+      }
+  });
